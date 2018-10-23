@@ -1,0 +1,43 @@
+{
+    "name": "sbtsdev/laravelclickuperrorreports",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "sbtsdev",
+            "email": "webdesign@sbts.edu",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/sbtsdev/laravelclickuperrorreports",
+    "keywords": ["Laravel", "LaravelClickupErrorReports"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "sbtsdev\\LaravelClickupErrorReports\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "sbtsdev\\LaravelClickupErrorReports\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "sbtsdev\\LaravelClickupErrorReports\\LaravelClickupErrorReportsServiceProvider"
+            ],
+            "aliases": {
+                "LaravelClickupErrorReports": "sbtsdev\\LaravelClickupErrorReports\\Facades\\LaravelClickupErrorReports"
+            }
+        }
+    }
+}
