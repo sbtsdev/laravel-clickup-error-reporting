@@ -42,7 +42,7 @@ If you discover any security related issues, please email webdesign@sbts.edu ins
 
 ## License
 
-license. Please see the [license file](license.md) for more information.
+This software is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 [ico-version]: https://img.shields.io/packagist/v/sbtsdev/laravelclickuperrorreports.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/sbtsdev/laravelclickuperrorreports.svg?style=flat-square
