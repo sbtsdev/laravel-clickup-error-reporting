@@ -24,7 +24,6 @@ class LaravelClickupErrorReports
     {
         $ch = curl_init();
 
-        $this->listId = '';
         curl_setopt($ch, CURLOPT_URL, "https://api.clickup.com/api/v1/list/$this->listId/task");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_HEADER, false);
