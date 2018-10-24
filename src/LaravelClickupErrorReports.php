@@ -48,7 +48,7 @@ class LaravelClickupErrorReports
         //check that id of new task is returned
         $data = json_decode($response);
 
-        if (!($response->id ?? '')) {
+        if (!($data->id ?? '')) {
             $this->sendErrorEmail("Failed to created task in clickup", print_r($post_fields, true));
         }
     }

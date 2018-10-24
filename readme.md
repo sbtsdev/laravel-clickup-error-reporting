@@ -17,6 +17,23 @@ $ composer require sbtsdev/laravelclickuperrorreports
 
 ## Usage
 
+Set up the following in your .env
+```
+//get this from "Apps" under the user profile in clickup
+CLICKUP_API_PK=
+
+//list id pulled from clickup
+//to pull the list id use dev tools in a browser
+// and get the value of the data-category attribute from the div for a task in that task list
+CLICKUP_LIST_ID=
+
+//clickup Id, I pulled it from the first number in the profile image uri
+CLICKUP_ASSIGNEE_ID=
+
+//if clickup rest call fails then email this address
+CLICKUP_BACKUP_EMAIL=
+```
+
 ## Change log
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
@@ -24,7 +41,7 @@ Please see the [changelog](changelog.md) for more information on what has change
 ## Testing
 
 ``` bash
-$ composer test
+
 ```
 
 ## Contributing
