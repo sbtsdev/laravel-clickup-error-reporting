@@ -6,7 +6,7 @@
         {
             "name": "sbtsdev",
             "email": "webdesign@sbts.edu",
-            "homepage": "author homepage"
+            "homepage": "https://github.com/sbtsdev/laravel-clickup-error-reporting/"
         }
     ],
     "homepage": "https://github.com/sbtsdev/laravelclickuperrorreports",
