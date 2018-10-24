@@ -1,4 +1,3 @@
-no changes added to commit (use "git add" and/or "git commit -a")
 # LaravelClickupErrorReports
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
