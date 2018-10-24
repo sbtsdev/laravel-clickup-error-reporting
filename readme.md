@@ -5,7 +5,7 @@
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
 
-This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
+Package for sending error reports from laravel to Clickup. Take a look at [contributing.md](contributing.md) to see a to do list.
 
 ## Installation
 

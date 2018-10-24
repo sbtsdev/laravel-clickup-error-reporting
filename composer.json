@@ -1,6 +1,6 @@
 {
     "name": "sbtsdev/laravelclickuperrorreports",
-    "description": ":description",
+    "description": "Package for sending error reports from laravel to Clickup",
     "license": "MIT",
     "authors": [
         {
