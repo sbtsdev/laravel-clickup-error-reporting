@@ -16,4 +16,7 @@ return [
 
     //if clickup rest call fails then email this address
     'backup_email' => env('CLICKUP_BACKUP_EMAIL', '')
+
+    //send errors even when not in production environment
+    'send_errors_in_dev' => env('CLICKUP_SEND_DEV_ERRORS', false)
 ];

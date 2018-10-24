@@ -11,6 +11,7 @@ class LaravelClickupErrorReports
     private $clickupKey;
     private $assigneeId;
     private $backupEmail;
+    private $sendDevErrors;
 
     public function __construct()
     {
@@ -18,10 +19,16 @@ class LaravelClickupErrorReports
         $this->clickupKey = config('laravelclickuperrorreports.personal_api_key');
         $this->assigneeId = config('laravelclickuperrorreports.assignee_id');
         $this->backupEmail = config('laravelclickuperrorreports.backup_email');
+        $this->sendDevErrors = config('laravelclickuperrorreports.send_errors_in_dev');
     }
 
     public function createTask(string $name, string $content) : void
     {
+        //only send error in production or when devErrors flag is set
+        if (config('app.env') !== 'production' && !$this->sendDevErrors) {
+            return;
+        }
+
         $ch = curl_init();
 
         curl_setopt($ch, CURLOPT_URL, "https://api.clickup.com/api/v1/list/$this->listId/task");
