@@ -37,7 +37,7 @@ If you discover any security related issues, please email webdesign@sbts.edu ins
 
 ## Credits
 
-- [sbtsdev][https://github.com/sbtsdev/]
+- [sbtsdev][link-author]
 - [All Contributors][link-contributors]
 
 ## License
