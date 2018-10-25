@@ -32,6 +32,9 @@ CLICKUP_ASSIGNEE_ID=
 
 //if clickup rest call fails then email this address
 CLICKUP_BACKUP_EMAIL=
+
+//set to true if you want errors sent in a dev environment
+CLICKUP_SEND_DEV_ERRORS=
 ```
 
 ## Change log
