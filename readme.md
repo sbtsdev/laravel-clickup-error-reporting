@@ -24,7 +24,7 @@ CLICKUP_API_PK=
 
 //list id pulled from clickup
 //to pull the list id use dev tools in a browser
-// and get the value of the data-category attribute from the div for a task in that task list
+// and get the value of the data-SUBcategory attribute from the div for a task in that task list
 CLICKUP_LIST_ID=
 
 //clickup Id, I pulled it from the first number in the profile image uri
