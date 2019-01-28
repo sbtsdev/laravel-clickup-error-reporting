@@ -56,7 +56,8 @@ class LaravelClickupErrorReports
         $data = json_decode($response);
 
         if (!($data->id ?? '')) {
-            $this->sendErrorEmail("Failed to created task in clickup", print_r($post_fields, true));
+            $clickUpError = "Clickup Error: " . print_r($data, true) . " from " . print_r($post_fields, true);
+            $this->sendErrorEmail("Failed to created task in clickup", $clickUpError);
         }
     }
 
