@@ -6,7 +6,6 @@ use Mail;
 
 class LaravelClickupErrorReports
 {
-
     private $listId;
     private $clickupKey;
     private $assigneeId;
@@ -29,6 +28,9 @@ class LaravelClickupErrorReports
             return;
         }
 
+        // ClickUp has a max length for task title, choose lower value for readability
+        $nameTruncated = substr($name, 0, 100);
+
         $ch = curl_init();
 
         curl_setopt($ch, CURLOPT_URL, "https://api.clickup.com/api/v1/list/$this->listId/task");
@@ -36,7 +38,7 @@ class LaravelClickupErrorReports
         curl_setopt($ch, CURLOPT_HEADER, false);
         curl_setopt($ch, CURLOPT_POST, true);
         $post_fields = [
-            "name" => $name,
+            "name" => $nameTruncated,
             "content" => $content,
             "assignees" => [
                 $this->assigneeId
