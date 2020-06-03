@@ -75,8 +75,10 @@ class LaravelClickupErrorReports
 
     private function sendErrorEmail(string $subject, string $details) : void
     {
-        Mail::raw($details, function ($email) use ($subject) {
-            $email->subject($subject)->to($this->backupEmail);
-        });
+        if ($this->backupEmail) {
+            Mail::raw($details, function ($email) use ($subject) {
+             $email->subject($subject)->to($this->backupEmail);
+            });
+        }
     }
 }
