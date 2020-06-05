@@ -62,7 +62,7 @@ class LaravelClickupErrorReports
         }
     }
 
-    public function createTaskFromException(\Exception $e, string $title = 'Error encountered', string $extra = '') : void
+    public function createTaskFromException($e, string $title = 'Error encountered', string $extra = '') : void
     {
         $message = "On or about ".date("m/d/Y H:i:s").", the following exception was thrown:\n\n";
         $message.= "File: ".$e->getFile()."\r\n\r\nLine: ".$e->getLine()."\r\n\r\nError code: ".$e->getCode()."\r\n\r\n";
