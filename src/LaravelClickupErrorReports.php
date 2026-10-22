@@ -52,7 +52,6 @@ class LaravelClickupErrorReports
         ));
 
         $response = curl_exec($ch);
-        curl_close($ch);
 
         //check that id of new task is returned
         $data = json_decode($response);
